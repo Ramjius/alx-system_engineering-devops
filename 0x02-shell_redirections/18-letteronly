@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -i  "^[a-z]"  /etc/ssh/sshd_config
+grep -e "SyslogFacility" -e "AuthorizedKeysFile" -e "Privilege" -e "AcceptEnv" -e "Subsystem" /etc/ssh/sshd_config
